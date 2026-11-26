@@ -41,6 +41,5 @@ def home():
         except requests.exceptions.RequestException:
             error = "Network problem. Check your internet."
     return render_template("index.html", data=data, error=error)
-
 if __name__ == "__main__":
     app.run()
